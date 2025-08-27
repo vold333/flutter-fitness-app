@@ -1,16 +1,30 @@
-# fitness
+# Flutter Health Questionnaire App
 
-A new Flutter project.
+## Overview
+A Flutter app featuring:
+- Email & Password Authentication via Firebase
+- User questionnaire storing data in Firebase Firestore
+- Health data integration from Apple HealthKit (iOS) or Google Fit (Android)
+- Health data stored securely in Firebase linked to user UID
 
-## Getting Started
+## Setup Instructions
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- Flutter SDK (>=3.x)
+- Firebase CLI & Project
+- Android Studio (for Android)
 
-A few resources to get you started if this is your first Flutter project:
+### Firebase Setup
+1. Create a Firebase project in [Firebase Console](https://console.firebase.google.com/)
+2. Enable Authentication:
+   - Email/Password
+3. Set up Firestore Database with security rules as needed.
+4. Download `google-services.json` (Android) into your Flutter project under respective folders.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Google Fit Setup
+- Android: Configure Google Fit API and permissions in `AndroidManifest.xml`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Run the app
+```bash
+flutter pub get
+flutter run
